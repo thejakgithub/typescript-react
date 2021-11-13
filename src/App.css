@@ -63,3 +63,14 @@
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 640px) {
+  .form-container,.series-list {
+    width: 22rem;
+
+  }
+  .form-div{
+    margin: 0;
+    padding: 0;
+  }
+  
+}

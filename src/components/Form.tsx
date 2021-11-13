@@ -36,8 +36,8 @@ export const Form: FC<Props> = ({ seriesList, setSeriesList }) => {
     setSeasons(event.target.value);
   };
 
-  const handleClick = (event: FormEvent<HTMLFormElement >) => {
-      event.preventDefault();
+  const handleClick = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
     if (!name || !genre || !cover || !imdb || !seasons) {
       alert("Please enter series info!");
       return;
@@ -101,9 +101,7 @@ export const Form: FC<Props> = ({ seriesList, setSeriesList }) => {
             onChange={setSeasonsInputHandler}
           />
         </div>
-        <button type="submit" >
-          Add Series
-        </button>
+        <button type="submit">Add Series</button>
       </form>
     </>
   );
