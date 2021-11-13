@@ -15,11 +15,11 @@ export const List: FC<SeriesProps> = ({ seriesList }) => {
           <p>Genre : {series.genre}</p>
           <p>Season : {series.seasons}</p>
           <p>Imdb : {series.imdb}</p>
-          {series.imdb == 1 && <p>⭐</p>}
-          {series.imdb == 2 && <p>⭐⭐</p>}
-          {series.imdb == 3 && <p>⭐⭐⭐</p>}
-          {series.imdb == 4 && <p>⭐⭐⭐⭐</p>}
-          {series.imdb == 5 && <p>⭐⭐⭐⭐⭐</p>}
+          {series.imdb === "1" && <p>⭐</p>}
+          {series.imdb === "2" && <p>⭐⭐</p>}
+          {series.imdb === "3" && <p>⭐⭐⭐</p>}
+          {series.imdb === "4" && <p>⭐⭐⭐⭐</p>}
+          {series.imdb === "5" && <p>⭐⭐⭐⭐⭐</p>}
         </div>
       ))}
     </div>

@@ -1,7 +1,7 @@
 export interface SeriesProps {
     seriesList:{
         name:string;
-        imdb:number;
+        imdb:string;
         cover:string;
         seasons:number;
         genre:string;
